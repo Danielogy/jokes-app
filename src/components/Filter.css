@@ -1,0 +1,106 @@
+.container{
+    max-width: fit-content;
+    margin: 50px auto 0px auto;
+}
+
+.filter-container{
+    width: 65%;
+    margin: auto;
+    border: solid #c6c6c685 2px;
+    background-color: #333;
+    border-radius: 6px;
+    color: white;
+}
+.close{
+    text-align: right;
+    padding: 10px;
+    border-bottom: solid #c6c6c685 1px;
+}
+.close:hover{
+    cursor: pointer;
+}
+
+.filters{
+    text-align: left;
+    padding: 10px;
+}
+
+#languages{
+    -webkit-appearance: none;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 11px;
+    width: 125px;
+    height: 40px;
+    background-color: #333;
+    padding-left: 15px;
+    color: white;
+    outline: none;
+    border: solid #c6c6c62c 1px;
+    border-radius: 25px;
+}
+
+.categories,
+.flags{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.pill,
+.pill-flag {
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 10px;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border: solid #555 1px;
+    transition: all 0.5s ease;
+    cursor:pointer;
+    background: linear-gradient(to left, transparent 50%, #555 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.pill.active,
+.pill-flag.active{
+    background-position: left bottom;    
+}
+
+#getFilteredJoke{
+    width: 100%;
+    margin-top: 10px;
+    height: 40px;
+    border-radius: 6px;
+    outline: none;
+    color: white;
+    background-color: #999;
+    border: solid #c6c6c62c 1px;
+    cursor:pointer;
+    cursor: pointer;
+    box-shadow: #666 0px 5px;
+}
+#getFilteredJoke:active{
+    transform: translateY(4px);
+    box-shadow: #668 0px 1px;
+}
+#getFilteredJoke:disabled{
+    background-color: salmon;
+    cursor: not-allowed;
+    color: black;
+}
+
+.error-message{
+    text-align: center;
+    color: salmon;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 800px){
+    .filter-container{
+        width: 85%;
+    }
+}

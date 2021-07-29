@@ -1,0 +1,81 @@
+.buttons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#getJoke{
+    width: 300px;
+    height: 40px;
+    font-size: 14px;
+    border: solid #c6c6c685 1px;
+    background-color: #333;
+    color: white; 
+    border-radius: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    box-shadow: #444 0px 5px;
+}
+#getJoke:active{
+    transform: translateY(4px);
+    box-shadow: #446 0px 1px;
+}
+
+#getJoke:disabled,
+#searchJoke:disabled{
+    cursor: not-allowed;
+}
+
+#searchJoke{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #333;
+    background-image: url(./../assets/icons/search.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid #c6c6c685 1px;
+    cursor: pointer;
+    box-shadow: #444 0px 5px;
+}
+
+#searchJoke:active{
+    transform: translateY(4px);
+    box-shadow: #446 0px 1px;
+}
+
+.joke,
+.loading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    height: 60vh;
+}
+
+.setup{
+    margin-bottom: 20px;
+}
+
+.setup,
+.delivery{
+    padding: 0 16px 0 16px;
+}
+
+.credits{
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.credits{
+    padding-left: 10px;
+}
+.credits a{
+    color: black;
+    text-decoration: none;
+}
+.credits a:visited{
+    color: black;
+}
